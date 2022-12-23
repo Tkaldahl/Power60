@@ -14,8 +14,9 @@ export class CreateAccountPage implements OnInit {
 
     ngOnInit() {
         this.newAccountForm = new FormBuilder().group({
-            firstName: new FormControl("Taylor", Validators.required),
-            lastName: new FormControl("Kaldahl", Validators.required)
+            firstName: new FormControl(null, Validators.required),
+            lastName: new FormControl(null, Validators.required),
+            email: new FormControl(null, Validators.required),
         });
     }
 }

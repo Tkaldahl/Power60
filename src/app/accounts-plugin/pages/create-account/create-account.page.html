@@ -1,9 +1,18 @@
 <div>
-    <form [formGroup]="newAccountForm">
-        <label for="first-name">First Name: </label>
-        <input id="first-name" type="text" formControlName="firstName">
+    <form class="vertical-flex" [formGroup]="newAccountForm">
+        <div>
+            <label for="first-name">First Name: </label>
+            <input id="first-name" type="text" formControlName="firstName">
+        </div>
 
-        <label for="last-name">Last Name: </label>
-        <input id="last-name" type="text" formControlName="lastName">
+        <div>
+            <label for="last-name">Last Name: </label>
+            <input id="last-name" type="text" formControlName="lastName">
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input id="email" type="text" formControlName="email">
+        </div>
     </form>
 </div>
