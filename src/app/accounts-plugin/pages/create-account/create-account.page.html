@@ -15,4 +15,6 @@
             <input id="email" type="text" formControlName="email">
         </div>
     </form>
+
+    <button [disabled]="!canSubmit(newAccountForm)" (click)="submit(newAccountForm)">Submit</button>
 </div>

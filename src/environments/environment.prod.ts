@@ -1,3 +1,10 @@
 export const environment = {
-  production: true
+  production: true,
+  config: {
+    services: {
+      ident: {
+        endpoint: "http://localhost:8010"
+      }
+    }
+  }
 };
